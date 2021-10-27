@@ -12,7 +12,7 @@ terraform {
 
 provider "aws" {
   region  = "us-east-1"
-  profile = "tf014"
+  profile = var.aws_profile
 }
 
 resource "aws_s3_bucket" "my-test-bucket" {
